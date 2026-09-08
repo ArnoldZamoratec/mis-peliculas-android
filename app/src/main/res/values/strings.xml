@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">APUPE</string>
+    <string name="titulo_nueva_pelicula">Añadir Película</string>
+    <string name="titulo_editar_pelicula">Editar Película</string>
+    <string name="hint_titulo">Título de la película</string>
+    <string name="hint_anio">Año de estreno</string>
+    <string name="hint_genero">Género</string>
+    <string name="etiqueta_seleccionar_genero">Selecciona el Género</string>
+    <string name="hint_video_url">Enlace de Video Streaming (.m3u8 / MP4)</string>
+    <string name="etiqueta_calificacion">Calificación</string>
+    <string name="btn_guardar_pelicula">Guardar Película</string>
+    <string name="btn_actualizar_pelicula">Actualizar Película</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="titulo_principal">APUPE</string>
+    <string name="cd_agregar_pelicula">Agregar película</string>
+
+    <!-- Strings para Login APUPE -->
+    <string name="login_iniciar_sesion">Iniciar sesión</string>
+    <string name="login_hint_email">Email o número de teléfono</string>
+    <string name="login_hint_password">Contraseña</string>
+    <string name="login_btn_ingresar">Iniciar sesión</string>
+    <string name="login_btn_invitado">Entrar como invitado</string>
+    <string name="login_recuerdame">Recuérdame</string>
+    <string name="login_necesitas_ayuda">¿Necesitas ayuda?</string>
+    <string name="login_nuevo_suscribete">¿Primera vez en APUPE? Suscríbete ya.</string>
+    <string name="login_error_email">Por favor ingresa un email válido</string>
+    <string name="login_error_pass">La contraseña debe tener al menos 4 caracteres</string>
+    <string name="reg_titulo">Crea tu cuenta en APUPE</string>
+    <string name="reg_hint_nombre">Nombre completo</string>
+    <string name="reg_hint_email">Correo electrónico</string>
+    <string name="reg_hint_password">Contraseña (mínimo 4 caracteres)</string>
+
+    <!-- Transition Welcome Screen -->
+    <string name="welcome_subtitle">Bienvenido a APUPE Cinema</string>
+    <string name="welcome_login">LOGIN</string>
+    <string name="welcome_entrar">ENTRAR</string>
+    <string name="main_empty_title">Tu catálogo de APUPE está vacío</string>
+    <string name="main_empty_subtitle">Presiona + para añadir tus películas favoritas</string>
+    <string name="main_logout">Cerrar sesión</string>
+    <string name="main_btn_salir">Salir</string>
+    <string name="main_search_hint">Buscar película…</string>
+</resources>

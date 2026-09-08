@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/netflix_black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- LOGO -->
+        <LinearLayout
+            android:id="@+id/containerLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_movie"
+                android:contentDescription="Icono App"
+                app:tint="@color/netflix_red"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtLogoHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/netflix_red"
+                android:textSize="28sp"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.08"
+                android:shadowColor="#80000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="6" />
+
+        </LinearLayout>
+
+        <!-- TARJETA DE LOGIN -->
+        <LinearLayout
+            android:id="@+id/cardLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_login_card"
+            android:padding="28dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@id/containerLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_max="450dp">
+
+            <!-- TÍTULO -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_iniciar_sesion"
+                android:textColor="@color/netflix_text_white"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="24dp" />
+
+            <!-- CORREO ELECTRÓNICO -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Correo electrónico"
+                android:textColorHint="@color/netflix_text_hint"
+                app:boxBackgroundColor="@color/netflix_input"
+                app:boxCornerRadiusBottomEnd="6dp"
+                app:boxCornerRadiusBottomStart="6dp"
+                app:boxCornerRadiusTopEnd="6dp"
+                app:boxCornerRadiusTopStart="6dp"
+                app:boxStrokeColor="@color/netflix_red"
+                app:hintTextColor="@color/netflix_red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/netflix_text_white"
+                    android:textSize="15sp"
+                    android:minHeight="52dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- CONTRASEÑA -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:hint="@string/login_hint_password"
+                android:textColorHint="@color/netflix_text_hint"
+                app:boxBackgroundColor="@color/netflix_input"
+                app:boxCornerRadiusBottomEnd="6dp"
+                app:boxCornerRadiusBottomStart="6dp"
+                app:boxCornerRadiusTopEnd="6dp"
+                app:boxCornerRadiusTopStart="6dp"
+                app:boxStrokeColor="@color/netflix_red"
+                app:hintTextColor="@color/netflix_red"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/netflix_text_secondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/netflix_text_white"
+                    android:textSize="15sp"
+                    android:minHeight="52dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- BOTÓN INGRESAR -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="@string/login_btn_ingresar"
+                android:textColor="@color/netflix_text_white"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:backgroundTint="@color/netflix_red"
+                app:cornerRadius="6dp"
+                android:elevation="4dp" />
+
+            <!-- RECORDARME -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <CheckBox
+                    android:id="@+id/cbRecuerdame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_recuerdame"
+                    android:textColor="@color/netflix_text_secondary"
+                    android:textSize="13sp"
+                    android:buttonTint="@color/netflix_text_secondary"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+            <!-- REGISTRO -->
+            <TextView
+                android:id="@+id/txtSubscribete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_nuevo_suscribete"
+                android:textColor="@color/netflix_text_secondary"
+                android:textSize="14sp"
+                android:layout_marginTop="24dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

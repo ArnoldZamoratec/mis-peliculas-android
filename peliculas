@@ -1,0 +1,47 @@
+[
+  {
+    "id": 101,
+    "titulo": "Inception (Origen) - APUPE",
+    "anio": 2010,
+    "genero": "Sci-Fi",
+    "calificacion": 5,
+    "imagen_uri": null,
+    "video_url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    "id": 102,
+    "titulo": "The Dark Knight - APUPE",
+    "anio": 2008,
+    "genero": "Acción",
+    "calificacion": 5,
+    "imagen_uri": null,
+    "video_url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    "id": 103,
+    "titulo": "Interstellar - APUPE",
+    "anio": 2014,
+    "genero": "Sci-Fi",
+    "calificacion": 5,
+    "imagen_uri": null,
+    "video_url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    "id": 104,
+    "titulo": "Avatar: El Sentido del Agua",
+    "anio": 2022,
+    "genero": "Aventura",
+    "calificacion": 4,
+    "imagen_uri": null,
+    "video_url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    "id": 105,
+    "titulo": "Spider-Man: Across the Spider-Verse",
+    "anio": 2023,
+    "genero": "Animación",
+    "calificacion": 5,
+    "imagen_uri": null,
+    "video_url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  }
+]
